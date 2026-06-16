@@ -181,3 +181,31 @@ footer .copyright {
   font-size: 13px;
   margin-top: 16px;
 }
+.cv-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 30px;
+  background-color: #a855f7;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+}
+/* SCROLL ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
