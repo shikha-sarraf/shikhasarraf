@@ -15,6 +15,7 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -41,12 +42,31 @@
       <p>I am a 4th year BEI student at Pulchowk Campus, Institute of Engineering, Nepal. I am passionate about AI/ML, RF Engineering, Robotics, and RL.</p>
     </section>
 
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+
+      <div class="education-card">
+        <h3>Bachelor of Electronics and Information Engineering (BEI)</h3>
+        <p class="institution">Pulchowk Campus, Institute of Engineering, Tribhuvan University</p>
+        <p class="year">2021 — Present</p>
+        <p>Studying Electronics, Communication and Information Technology with focus on AI/ML, RF Engineering, Computer Networking and Robotics.</p>
+      </div>
+
+      <div class="education-card">
+        <h3>Higher Secondary Education (Science)</h3>
+        <p class="institution">National Infotech</p>
+        <p class="year">2019 — 2021</p>
+      </div>
+
+    </section>
+
     <!-- SKILLS SECTION -->
     <section id="skills" class="fade-in">
       <h2>Skills</h2>
       <ul>
         <li>Python & Machine Learning</li>
-        <li>RF & Microwave Engineering</li>
+        <li>Reinforcement Learning</li>
         <li>Computer Networking</li>
         <li>Deep Learning & AI</li>
         <li>Robotics (ROS2, TurtleBot3)</li>
@@ -59,20 +79,95 @@
       <h2>Projects</h2>
 
       <div class="project-card">
-        <h3>Fake Audio Detection</h3>
-        <p>Binary classifier distinguishing real from AI-synthesized speech using ASVspoof 2019 dataset and Wav2Vec2.</p>
+        <div class="project-header">
+          <h3>Fake Audio Detection</h3>
+          <span class="project-status">In Progress</span>
+        </div>
+        <p>Binary classifier distinguishing real from AI-synthesized speech using ASVspoof 2019 dataset. Compared CNN and Transformer architectures to identify the most effective approach.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Wav2Vec2</span>
+          <span>Deep Learning</span>
+          <span>ASVspoof 2019</span>
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>TurtleBot3 RL Navigation</h3>
-        <p>Deep reinforcement learning based robot navigation using PPO algorithm in ROS2 and PyBullet simulation.</p>
+        <div class="project-header">
+          <h3>TurtleBot3 RL Navigation</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>Deep reinforcement learning based autonomous robot navigation using PPO algorithm. Achieved ~94.7% goal success rate across evaluation episodes in simulation.</p>
+        <div class="project-tech">
+          <span>ROS2</span>
+          <span>PyBullet</span>
+          <span>PPO</span>
+          <span>Stable Baselines3</span>
+          <span>Python</span>
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>Routine Management System</h3>
-        <p>A database management system project for managing and organizing academic routines efficiently using DBMS concepts.</p>
+        <div class="project-header">
+          <h3>🇳🇵 Bhesbhusa</h3>
+          <span class="project-status hackathon">Hackathon Project</span>
+        </div>
+        <p>A web platform where users can virtually try on Nepali cultural dresses, learn the stories behind them, and support local women artisans by purchasing outfits. Built during the All Nepal Female Hackathon organized by Shequal Foundation.</p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>Tailwind CSS</span>
+          <span>shadcn/ui</span>
+          <span>Lucide React</span>
+        </div>
       </div>
 
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Routine Management System</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>A database management system for organizing and managing academic routines efficiently. Built using core DBMS concepts including normalization, queries and relational design.</p>
+        <div class="project-tech">
+          <span>DBMS</span>
+          <span>SQL</span>
+          <span>Database Design</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies" class="fade-in">
+      <h2>Hobbies & Interests</h2>
+
+      <div class="hobbies-grid">
+
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <h3>Reading</h3>
+          <p>Enjoy reading books in my free time.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">💻</span>
+          <h3>Coding</h3>
+          <p>Building projects and exploring new technologies.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">✏️</span>
+          <h3>Sketching & Drawing</h3>
+          <p>Enjoy expressing creativity through sketching and drawing in free time.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-icon">🧶</span>
+          <h3>Crochet</h3>
+          <p>I love making handmade garments and accessories including crop tops and fashion pieces.</p>
+        </div>
+
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
@@ -82,7 +177,6 @@
       <p>GitHub: <a href="https://github.com/shikha-sarraf">github.com/shikha-sarraf</a></p>
     </section>
 
-    <script src="script.js"></script>
     <!-- FOOTER -->
     <footer>
       <p>Designed & Built by Shikha Sarraf</p>
@@ -92,5 +186,11 @@
       </div>
       <p class="copyright">© 2025 Shikha Sarraf. All rights reserved.</p>
     </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop">↑</button>
+  <script src="script.js"></script>
+
   </body>
+  
 </html>
