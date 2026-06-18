@@ -57,5 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // See All Photos Toggle
+  const seeAllPhotosBtn = document.getElementById('see-all-photos-btn');
+  const photosGrid = document.getElementById('photos-grid');
+  if (seeAllPhotosBtn && photosGrid) {
+    seeAllPhotosBtn.addEventListener('click', () => {
+      photosGrid.classList.add('show-all');
+      seeAllPhotosBtn.style.display = 'none';
+    });
+  }
   
 });
